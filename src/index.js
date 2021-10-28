@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { GifExpertApp } from './GifExpertApp';
+import { GifFinderApp } from './GifFinderApp';
 
 import './index.css';
 
 
 ReactDOM.render(
-    <GifExpertApp />,
+    <GifFinderApp />,
   document.getElementById('root')
 );
 
