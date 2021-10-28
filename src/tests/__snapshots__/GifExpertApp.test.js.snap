@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GiftExpertApp /> tests should render correctly 1`] = `
+<Fragment>
+  <h2>
+    GiftExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol />
+</Fragment>
+`;
+
+exports[`<GiftExpertApp /> tests should shows categories 1`] = `
+<Fragment>
+  <h2>
+    GiftExpertApp
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="Metallica"
+      key="Metallica"
+    />
+    <GifGrid
+      category="Slipknot"
+      key="Slipknot"
+    />
+  </ol>
+</Fragment>
+`;

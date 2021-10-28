@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifGrid /> tests should render correctly 1`] = `
+<Fragment>
+  <h3>
+    Naruto
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <p
+      className="animate__animated animate__flash"
+    >
+      Loading...
+    </p>
+  </div>
+</Fragment>
+`;
+
+exports[`<GifGrid /> tests should render correctly 2`] = `
+<Fragment>
+  <h3>
+    hola
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="image"
+      url="https://localhost/folder/new.jpg"
+    />
+    <GifGridItem
+      id="ABCD"
+      key="ABCD"
+      title="image"
+      url="https://localhost/folder/newa.jpg"
+    />
+  </div>
+</Fragment>
+`;

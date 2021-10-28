@@ -1,34 +1,28 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { AddCategory } from './AddCategory';
-import { GiftGrid } from './GiftGrid';
+import { GifGrid } from './GifGrid';
 
-export const GiftExpertApp = () => {
+export const GifExpertApp = ({ defaultCategories = [] }) => {
 
-    // const categories = ['Pluto', 'JJK', 'Bleach'];
-    const [categories, setCategories] = useState(['Naruto'])
-
-    // const handleAdd = () => {
-    //     setCategories([...categories, 'Naruto']);
-    //     setCategories( cats => [...categories, 'Naruto'] );
-    // } 
+    const [categories, setCategories] = useState(defaultCategories);
 
     return (
-        <>
-        <h2>GiftExpertApp</h2>
-        <AddCategory setCategories={ setCategories }/>
-        <hr />
+        <div className="container">
+            <h2>GIF Finder</h2>
+            <AddCategory setCategories={setCategories} />
+            
+            <ol>
+                {
+                    categories.map(category => (
+                        <GifGrid
+                            key={category}
+                            category={category}
+                        />
 
-        <ol>
-            {
-                categories.map( category => (
-                    <GiftGrid 
-                        key={ category }
-                        category={ category }
-                    />
-
-                ))
-            }
-        </ol>
-        </>
+                    ))
+                }
+            </ol>
+            
+        </div>
     )
 }

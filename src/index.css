@@ -4,6 +4,11 @@
 
 body {
     padding: 60px;
+    background: rgb(243, 136, 136);
+}
+
+.container {
+    padding: 0 80px;
 }
 
 input {
@@ -38,3 +43,9 @@ input {
 .card img {
     max-height: 170px;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+  }
